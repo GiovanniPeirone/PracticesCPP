@@ -12,5 +12,4 @@ Actividades:
 
 ###Problema 00
 
-Un programa que encuentre una palabra dentro de un array de letras aleatorias, el array contiene 244 letras y se debe encontrar la palabra:
-hola
+Un programa que quenere de manera aleatoria un array de 144 caracteres y crear un funcion para que el programa encuentre si existe una palabra espesificada
