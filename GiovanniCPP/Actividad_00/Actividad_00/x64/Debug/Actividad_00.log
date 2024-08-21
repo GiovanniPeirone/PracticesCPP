@@ -1,0 +1,4 @@
+﻿  Actividad_00.cpp
+D:\GitHub\PracticesCPP\GiovanniCPP\Actividad_00\Actividad_00\Actividad_00.cpp(14,10): warning C4101: 'PalabraEncontrada': variable local sin referencia
+D:\GitHub\PracticesCPP\GiovanniCPP\Actividad_00\Actividad_00\Actividad_00.cpp(30,1): warning C4715: 'EncontrarPalabra': no todas las rutas de acceso de control devuelven un valor
+  Actividad_00.vcxproj -> D:\GitHub\PracticesCPP\GiovanniCPP\Actividad_00\x64\Debug\Actividad_00.exe

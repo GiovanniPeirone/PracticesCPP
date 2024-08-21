@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\PracticesCPP\\GiovanniCPP\\Actividad_00\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5DE066-32CC-4ECD-B267-DCBB7ACB75BF}|Actividad_00\\Actividad_00.vcxproj|D:\\GitHub\\PracticesCPP\\GiovanniCPP\\Actividad_00\\Actividad_00\\Actividad_00.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7F5DE066-32CC-4ECD-B267-DCBB7ACB75BF}|Actividad_00\\Actividad_00.vcxproj|solutionrelative:Actividad_00\\Actividad_00.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 203,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actividad_00.cpp",
+              "DocumentMoniker": "D:\\GitHub\\PracticesCPP\\GiovanniCPP\\Actividad_00\\Actividad_00\\Actividad_00.cpp",
+              "RelativeDocumentMoniker": "Actividad_00\\Actividad_00.cpp",
+              "ToolTip": "D:\\GitHub\\PracticesCPP\\GiovanniCPP\\Actividad_00\\Actividad_00\\Actividad_00.cpp",
+              "RelativeToolTip": "Actividad_00\\Actividad_00.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-21T19:31:27.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 183,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
