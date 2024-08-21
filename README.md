@@ -12,4 +12,4 @@ Actividades:
 
 ###Problema 00
 
-Un programa que quenere de manera aleatoria un array de 144 caracteres y crear un funcion para que el programa encuentre si existe una palabra espesificada
+Un programa que quenere de manera aleatoria un array de 10.000 caracteres y crear un funcion para que el programa encuentre si existe una palabra espesificada
