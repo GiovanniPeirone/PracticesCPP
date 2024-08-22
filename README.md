@@ -1,6 +1,6 @@
 #PracticesCPP 
 
-that are my practices beforse a programing olympics 
+that are the practices beforse a programing olympics 
 
 
 Download docs 
