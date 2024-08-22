@@ -21,7 +21,7 @@ int main() {
         }
 
         // Secuencia que queremos encontrar
-        vector<char> secuencia = {'j','o','r','d','a','n'};
+        vector<char> secuencia = {'j','o','r','d','i'};
 
         // Buscar la secuencia en el vector
         auto it = search(letras.begin(), letras.end(), secuencia.begin(), secuencia.end());
