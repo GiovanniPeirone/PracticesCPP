@@ -1,42 +1,26 @@
-/*
-
-#Numeros = [1, 2, 3, 4, 100]  for each
-b = 2           #Tiene que ser mayor que 1 y no dividirse por 0, para evitar problemas
-restoTotal = []
-while b > 1:
-        resto = a % b
-        restoTotal.append(resto)
-        print(f"{a} % {b}", resto)
-        a = a // b
-        print("a es: ", a)
-        if a == 0:
-            break
-        
-        print("Resto es ", restoTotal)
-*/
 #include <iostream>
 #include <cmath>
-#include <vector>
 
 using namespace std;
 
-int main(){
+int main(){ //Puedo implementar la funcion Despues(Si hace falta)
     int a = 13;
     int b = 2;
-    vector<int> restos; 
-
+    int numeros[100];
+    int index = 0;
     
-    while (b > 1){
+    while (a > 0){
         int resto = a % b;
-        restos.push_back(resto);
-        cout << a << " % " << b << endl;
-        int a = a / b;
-        cout << resto;
+        numeros[index] = resto;  // Almacena el resto en la posición correcta
+        index++; //Hasta que termine
+        cout << a << " % " << b << " = " << resto << endl;
+        a = a / b; //No se requiere de una floor division
         cout << "a es " << a << endl;
-        if (a == 0){
-            break;
-            cout << restos[1];
-        }
+        
+    }
+    // i es Index y este mismo resta su valor para invertir el resto
+    for (int i = index - 1; i >= 0; i--){ 
+        cout << numeros[i];
     }
     
     return 0;
