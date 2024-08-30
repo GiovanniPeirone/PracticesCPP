@@ -4,8 +4,14 @@
 using namespace std;
 
 int main(){ //Puedo implementar la funcion Despues(Si hace falta)
-    int a = 13;
-    int b = 2;
+    int a;
+    cout << "Ingrese la Variable: ";
+    cin  >> a;
+
+    cout << "\n Ingrese la Base: ";
+    int b;
+    cin  >> b;
+    
     int numeros[100];
     int index = 0;
     
