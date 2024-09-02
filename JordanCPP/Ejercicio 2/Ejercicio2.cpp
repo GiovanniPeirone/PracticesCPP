@@ -54,13 +54,12 @@ void procesatexto(string texto, string comandos) {
         default:
             break;
         }
-        /*
         for (int i = 1; i <= 10; i++){ // Quiza deberia de recorrer un array :/
             if (comandos == "hola"){
                 cout << textos[1];
             }
         }
-        */
+
         
     }
 }
