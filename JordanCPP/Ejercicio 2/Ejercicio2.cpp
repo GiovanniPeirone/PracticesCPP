@@ -45,13 +45,24 @@ void procesatexto(string texto, string comandos) {
     while (true){
         //No se pueden usar switch :(
 
+        switch (comandos)
+        {
+        case 1:
+            cout << "Funciona el Switch"
+            break;
+        
+        default:
+            break;
+        }
+        /*
         for (int i = 1; i <= 10; i++){ // Quiza deberia de recorrer un array :/
             if (comandos == "hola"){
                 cout << textos[1];
             }
         }
-    }
+        */
         
+    }
 }
 
 int main() {
