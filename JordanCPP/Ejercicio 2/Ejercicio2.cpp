@@ -19,30 +19,44 @@ Hacer una Funcion (procesatexto(Para))              */
 
 using namespace std;
 
-const int TAM = 100;  // Tamaño máximo del array.
-char letras[TAM];     // Declaración de un array de caracteres.
-
 void procesatexto(string texto, string comandos) {
     while (true){
         if (comandos == "Imprimir"){
             cout << texto << endl;
         }
-        if (comandos == "Invertir")
-        if (comandos == "Agrega (Al Ultimo)")
-        if (comandos == "Chau agus (Borra el primer Agus)")
-        if (comandos == "BorraUlti")
-        if (comandos == "Intercambia Mayus Minus - Minud Mayus")
-        if (comandos == "DUP (Duplica la cadena)")
-        if (comandos == "Rota (Ultimo caracter al final)")
-        if (comandos == "Borra I (Posicion)")
+        if (comandos == "Invertir"){
+
+        }
+        if (comandos == "Agrega (Al Ultimo)"){
+
+        }
+        if (comandos == "Chau agus (Borra el primer Agus)"){
+
+        }
+        if (comandos == "BorraUlti"){
+
+        }
+        if (comandos == "Intercambia Mayus Minus - Minud Mayus"){
+
+        }
+        if (comandos == "DUP (Duplica la cadena)"){
+
+        }
+        if (comandos == "Rota (Ultimo caracter al final)"){
+
+        }
+        if (comandos == "Borra I (Posicion)"){
+
+        }
         break;
     }
 }
 
 int main() {
-    string texto = "fdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffCffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdfffffffffffffffffffffff";
+    string texto = "CACEROLAcasaLimonXYZagusiagus";
     string textos[] = {texto};
-    if  (textos->length() > 1000){
+
+    if  (textos->length() > 1000){          //Si el texto se excede de los 1.000 Caracteres
             cout << "MemoryLimitExceeded" << endl;
     } else  {
         int CantidadComandos;
