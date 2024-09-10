@@ -1,74 +1,59 @@
-/*
-CACEROLAcasaLimonXYZagusiagus 10 -> Entrada
-
--> Opciones
-BORRA-i:
-AGREGA      (Agrega una secuencia al final de la cadena)
-CHAUAGUS    (Borra la cadena agus este como este)
-BORRA-24
-BORRAULTI
-INVERTIR    (Borra el primer caracter)
-BORRAULTI   (Borra el ultimo caracter)
-INTERCAMBIA (Mayus -> Minus; Minus -> Mayus)
-INVERTIR    (Invierte la cadena)
-DUP         (Duplica la cadena)
-ROTA        (Lleva el primer caracter al final)
-
-
-
--> Resultado
-acerolaCASAlIMONxyzIAG
+/*  -> Resultado            acerolaCASAlIMONxyzIAG
     ->Proceso
     1   CACEROLAcasaLimonXYZagusiagus 10
     2   INVERTIR
     3   CHAUAGUS
     4   INVERTIR
-    5   CHAUAGUS
     6   BORRA-24
     7   BORRAULTI
     8   INVERTIR
     9   BORRAULTI
     10  INTERCAMBIA
     11  INVERTIR
-
-Hacer una Funcion
-*/
+Hacer una Funcion (procesatexto(Para))              */
 #include <iostream>
 #include <cmath>
-//toupper y tolower
-#include <cctype>
+#include<string>
+#include <algorithm> 
+#include <cctype>   //toupper y tolower
 
 using namespace std;
 
+const int TAM = 100;  // Tamaño máximo del array.
+char letras[TAM];     // Declaración de un array de caracteres.
+
 void procesatexto(string texto, string comandos) {
-    string textos[] = {texto};
-    
     while (true){
         if (comandos == "Imprimir"){
             cout << texto << endl;
-            string textos[] = {texto};
-            
         }
-        int length = sizeof(textos) / sizeof(textos[0]);
-        if (comandos == "minus"){
-            reverse(textos, textos + length);      
-            cout << textos;  
-        }
+        if (comandos == "Invertir")
+        if (comandos == "Agrega (Al Ultimo)")
+        if (comandos == "Chau agus (Borra el primer Agus)")
+        if (comandos == "BorraUlti")
+        if (comandos == "Intercambia Mayus Minus - Minud Mayus")
+        if (comandos == "DUP (Duplica la cadena)")
+        if (comandos == "Rota (Ultimo caracter al final)")
+        if (comandos == "Borra I (Posicion)")
         break;
     }
 }
 
 int main() {
-    string texto = "CACEROLAcasaLimonXYZagusiagus";
-
-    int CantidadComandos;
-    cout << "Cantidad de Comandos " << endl;
-    cin >> CantidadComandos;
-    for (int i = 0; i < CantidadComandos; i++){
-        string comandos;
-        cout << "Ingrese los comandos a aplicar: ";
-        cin  >>  comandos;
-        procesatexto(texto, comandos);
+    string texto = "fdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffCffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdffffffffffffffffffffffffdfffffffffffffffffffffff";
+    string textos[] = {texto};
+    if  (textos->length() > 1000){
+            cout << "MemoryLimitExceeded" << endl;
+    } else  {
+        int CantidadComandos;
+        cout << "Cantidad de Comandos " << endl;
+        cin >> CantidadComandos;
+        for (int i = 0; i < CantidadComandos; i++){
+            string comandos;
+            cout << "Ingrese los comandos a aplicar: ";
+            cin  >>  comandos;
+            procesatexto(texto, comandos);
+        }
     }
     return 0;
 }

@@ -9,8 +9,8 @@ int main() {
 
     // Solicita al usuario que ingrese una cadena de caracteres.
     cout << "Ingrese una cadena de letras: ";
-    cin.getline(letras, TAM);  // Captura la cadena de caracteres ingresada por el usuario.
 
+    cin.getline(letras, TAM);  // Captura la cadena de caracteres ingresada por el usuario.
     // Recorre cada carácter en el array hasta encontrar el carácter nulo ('\0'), que indica el final de la cadena.
     for (int i = 0; letras[i] != '\0'; i++) {
         // Verifica si el carácter actual es una letra minúscula.
