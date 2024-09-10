@@ -35,45 +35,40 @@ Hacer una Funcion
 */
 #include <iostream>
 #include <cmath>
+//toupper y tolower
+#include <cctype>
 
 using namespace std;
 
 void procesatexto(string texto, string comandos) {
-    cout << texto << "\n";
-    cout << comandos << "\n";
-    string textos[1] = {texto};
+    string textos[] = {texto};
+    
     while (true){
-        //No se pueden usar switch :(
-
-        switch (comandos)
-        {
-        case 1:
-            cout << "Funciona el Switch"
-            break;
-        
-        default:
-            break;
+        if (comandos == "Imprimir"){
+            cout << texto << endl;
+            string textos[] = {texto};
+            
         }
-        for (int i = 1; i <= 10; i++){ // Quiza deberia de recorrer un array :/
-            if (comandos == "hola"){
-                cout << textos[1];
-            }
+        int length = sizeof(textos) / sizeof(textos[0]);
+        if (comandos == "minus"){
+            reverse(textos, textos + length);      
+            cout << textos;  
         }
-
-        
+        break;
     }
 }
 
 int main() {
-    string texto;
-    cout << "Ingrese el texto deseado: ";
-    cin  >> texto;
+    string texto = "CACEROLAcasaLimonXYZagusiagus";
 
-    string comandos;
-    cout << "Ingrese los comandos a aplicar: ";
-    cin  >>  comandos;
-
-    procesatexto(texto, comandos);
-
+    int CantidadComandos;
+    cout << "Cantidad de Comandos " << endl;
+    cin >> CantidadComandos;
+    for (int i = 0; i < CantidadComandos; i++){
+        string comandos;
+        cout << "Ingrese los comandos a aplicar: ";
+        cin  >>  comandos;
+        procesatexto(texto, comandos);
+    }
     return 0;
 }
