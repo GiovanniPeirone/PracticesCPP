@@ -21,32 +21,51 @@ using namespace std;
 
 void procesatexto(string texto, string comandos) {
     while (true){
-        if (comandos == "Imprimir"){
+        if (comandos == "Imprimir"){  //Deberia de recorrer un rango para invertir
             cout << texto << endl;
         }
         if (comandos == "Invertir"){
-
+            reverse(texto.begin(), texto.end());
+            cout << texto << endl;
         }
-        if (comandos == "Agrega (Al Ultimo)"){
-
+        if (comandos == "Agrega"){
+            cout << texto + texto;
         }
         if (comandos == "Chau agus (Borra el primer Agus)"){
-
+            cout << texto + texto;
+        }
+        if (comandos == "BorraPri"){
+            if (!texto.empty()) {
+                texto.erase(texto.begin());
+            }
+            cout << texto << endl;
         }
         if (comandos == "BorraUlti"){
-
+            if (!texto.empty()) {
+                texto.pop_back();
+            }
+            cout << texto << endl;
         }
-        if (comandos == "Intercambia Mayus Minus - Minud Mayus"){
-
+        if (comandos == "MayusMinus"){
+            for (char c : texto) {   //Esto recorre la cadena viendo si:
+                if (islower(c)) {   //Es minuscula la pasa a mayus
+                    c = toupper(c);
+                } 
+                else if (isupper(c)) { //Es mayuscula la pasa a minus
+                    c = tolower(c);
+                }
+            }
+            cout << texto;
         }
-        if (comandos == "DUP (Duplica la cadena)"){
-
+        if (comandos == "DUP"){ // (Duplica la cadena, deberia de ir con un for con i y con j)
+            cout << texto + texto;
         }
-        if (comandos == "Rota (Ultimo caracter al final)"){
-
+        if (comandos == "Rota "){ //(Primer caracter al final)
+            cout << texto << endl;
         }
-        if (comandos == "Borra I (Posicion)"){
-
+        if (comandos == "Borra I"){
+            cout << texto << endl;
+            
         }
         break;
     }
