@@ -12,8 +12,7 @@
     11  INVERTIR
 Hacer una Funcion (procesatexto(Para))              */
 #include <iostream>
-#include <cmath>
-#include<string>
+#include<string>      
 #include <algorithm> 
 #include <cctype>   //toupper y tolower
 
@@ -21,32 +20,26 @@ using namespace std;
 
 void procesatexto(string texto, string comandos) {
     while (true){
-        if (comandos == "Imprimir"){  //Deberia de recorrer un rango para invertir
+        if (comandos == "Imprimir"){  //Imprime el texto
             cout << texto << endl;
         }
-        if (comandos == "Invertir"){
+        if (comandos == "Invertir"){  //Invierte usando reverse de inicio a fin
             reverse(texto.begin(), texto.end());
             cout << texto << endl;
         }
-        if (comandos == "Agrega"){
-            cout << texto + texto;
-        }
-        if (comandos == "Chau agus (Borra el primer Agus)"){
-            cout << texto + texto;
-        }
-        if (comandos == "BorraPri"){
+        if (comandos == "BorraPri"){       //Borra el primer caracter
             if (!texto.empty()) {
-                texto.erase(texto.begin());
+                texto.erase(texto.end());
             }
             cout << texto << endl;
         }
-        if (comandos == "BorraUlti"){
+        if (comandos == "BorraUlti"){       //Borra el ultimo caracter
             if (!texto.empty()) {
                 texto.pop_back();
             }
             cout << texto << endl;
         }
-        if (comandos == "MayusMinus"){
+        if (comandos == "Intercambia"){
             for (char c : texto) {   //Esto recorre la cadena viendo si:
                 if (islower(c)) {   //Es minuscula la pasa a mayus
                     c = toupper(c);
@@ -57,15 +50,21 @@ void procesatexto(string texto, string comandos) {
             }
             cout << texto;
         }
-        if (comandos == "DUP"){ // (Duplica la cadena, deberia de ir con un for con i y con j)
+        if (comandos == "DUP"){ // Duplica la cadena, falta duplicar subcadena
             cout << texto + texto;
         }
-        if (comandos == "Rota "){ //(Primer caracter al final)
+        if (comandos == "Rota"){       // Falta funcionalidad
             cout << texto << endl;
         }
-        if (comandos == "Borra I"){
+        if (comandos == "BorraI"){     //Falta funcionalidad
             cout << texto << endl;
-            
+        }
+        if (comandos == "Agrega"){
+            texto.push_back('h');
+            cout << texto;
+        }
+        if (comandos == "Chau_agus"){     //Falta Funcionalidad
+            cout << texto + texto;
         }
         break;
     }
