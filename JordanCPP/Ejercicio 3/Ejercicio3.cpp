@@ -21,23 +21,22 @@ for (int i = 0; i < ciudades; i++)
 */
 
 void panes(int ciudades, int peajes){
+    int Xi[3] = {ciudades};
+
     cout << "Xi: " << ciudades << endl;
     cout << "Ci: " << peajes << endl;
     //Ahora hay que pasar los panes por i+1 o i-1
     
-    cout << ciudades[i+1];
 }
 
 int main(){
-    
-    const int N = 3;        //N ciudades(Constante)
-    int ciudades[N] = {10, 51, 10};   //Panes en ciudades
+    int ciudades[3] = {10, 51, 10};   //Panes en ciudades
     int peajes[1] = {1};        //Panes por peaje
 
     int max = ciudades[0];
     int min = ciudades[0];
 
-    for (int m = 0; m < N; m++) //Una lista que se itera hasta que se cumpla la condicion
+    for (int m = 0; m < 3; m++) //Una lista que se itera hasta que se cumpla la condicion
     {
         if(ciudades[m] > max){
             max = ciudades[m];      //Guarda cuando las ciudades en posicion m son mayor que max y guarda (3>3, 3>1)
