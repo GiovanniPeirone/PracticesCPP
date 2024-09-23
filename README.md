@@ -3,6 +3,11 @@
 
 that are the practices beforse a programing olympics 
 
+Docs para la Olimpiada
+
+https://docs.google.com/document/d/1mCsw64OuEU6t8nmlEuy1UUgKocUtOvYHORkXo2dHBOw/edit?usp=sharing
+
+
 
 Download docs 
 
